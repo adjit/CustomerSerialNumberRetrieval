@@ -40,7 +40,7 @@
             // 
             // startDate
             // 
-            this.startDate.CustomFormat = "MM-dd-yyyy";
+            this.startDate.CustomFormat = "MM/dd/yyyy";
             this.startDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.startDate.Location = new System.Drawing.Point(75, 32);
             this.startDate.Name = "startDate";

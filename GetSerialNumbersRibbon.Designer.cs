@@ -34,19 +34,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tab1 = this.Factory.CreateRibbonTab();
+            this.msAddInTab = this.Factory.CreateRibbonTab();
             this.customerSerialNumbersGroup = this.Factory.CreateRibbonGroup();
             this.getCustomerSerialNumbers = this.Factory.CreateRibbonButton();
-            this.tab1.SuspendLayout();
+            this.msAddInTab.SuspendLayout();
             this.customerSerialNumbersGroup.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tab1
+            // msAddInTab
             // 
-            this.tab1.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
-            this.tab1.Groups.Add(this.customerSerialNumbersGroup);
-            this.tab1.Label = "TabAddIns";
-            this.tab1.Name = "tab1";
+            this.msAddInTab.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
+            this.msAddInTab.Groups.Add(this.customerSerialNumbersGroup);
+            this.msAddInTab.Label = "TabAddIns";
+            this.msAddInTab.Name = "msAddInTab";
             // 
             // customerSerialNumbersGroup
             // 
@@ -67,10 +67,10 @@
             // 
             this.Name = "GetSerialNumbersRibbon";
             this.RibbonType = "Microsoft.Excel.Workbook";
-            this.Tabs.Add(this.tab1);
+            this.Tabs.Add(this.msAddInTab);
             this.Load += new Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler(this.GetSerialNumbersRibbon_Load);
-            this.tab1.ResumeLayout(false);
-            this.tab1.PerformLayout();
+            this.msAddInTab.ResumeLayout(false);
+            this.msAddInTab.PerformLayout();
             this.customerSerialNumbersGroup.ResumeLayout(false);
             this.customerSerialNumbersGroup.PerformLayout();
             this.ResumeLayout(false);
@@ -79,7 +79,7 @@
 
         #endregion
 
-        internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonTab msAddInTab;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup customerSerialNumbersGroup;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton getCustomerSerialNumbers;
     }
